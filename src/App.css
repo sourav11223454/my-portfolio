@@ -1,6 +1,139 @@
-*{
+* {
   margin: 0;
   padding: 0;
-  font-family: Roboto
-;
+  font-family: Roboto;
+}
+
+.home-text {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  background: #fff;
+  font-family: 'Inter', sans-serif;
+  padding-top: 12vh;
+   animation: fadeUp 1s ease forwards;
+}
+
+.intro{
+    animation: fadeUp 0.8s ease forwards;
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+
+.mern {
+  font-size: 8rem;
+  font-weight: 900;
+  background: linear-gradient(90deg,
+      #777 0%,
+      #000 10%,
+      #000 90%,
+      #777 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 3;
+  letter-spacing: -3px;
+
+  animation: fadeUp 0.8s ease forwards;
+  animation-delay: 0.4s;
+  opacity: 0;
+
+}
+
+.dev {
+  position: absolute;
+  font-size: 9rem;
+  font-weight: 950;
+  color: transparent;
+  -webkit-text-stroke: 1.2px #bbb;
+
+  z-index: 1;
+  letter-spacing: -2px;
+  top: 30%;
+  transform: translateY(20px);
+
+   animation: fadeUp 0.8s ease forwards;
+  animation-delay: 0.6s;
+  opacity: 0;
+
+}
+
+.text-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.photo {
+  position: absolute;
+  top: 20%;
+  height: 65%;
+  width: 25%;
+  z-index: 2;
+  filter: grayscale(100%);
+  opacity: 90%;
+
+  animation: fadeUp 0.8s ease forwards;
+  animation-delay: 0.8s;
+  opacity: 0;
+}
+
+.buttons {
+  position: absolute;
+  top: 75%;
+  z-index: 4;
+  transform: translateX(50%);
+
+  animation: fadeUp 0.8s ease forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+.btn {
+  padding: 12px 20px;
+  margin: 10px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.btn.dark {
+  background: #111;
+  color: #fff;
+  border: none;
+}
+
+.btn.light {
+  background: transparent;
+  border: 1px solid #111;
+  color: #111;
+}
+
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(-50%,40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.btn.dark:hover {
+  background: transparent;
+  border: 1px solid black;
+  color: black;
+}
+
+.btn.light:hover {
+  background: #111;
+  color: white;
 }
