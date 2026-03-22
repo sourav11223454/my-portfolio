@@ -34,7 +34,7 @@ function Journey() {
       <div ref={ref} className="container position-relative py-5">
 
         {/* TITLE */}
-        <h1 className="fw-bold text-center mb-5" style={{ fontSize: "50px" }}>
+        <h1 className="journey-text fw-bold text-center mb-5" style={{ fontSize: "50px" }}>
           My Developer Journey
         </h1>
 

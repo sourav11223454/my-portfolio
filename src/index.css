@@ -7,7 +7,7 @@
 
 .home-text {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -17,6 +17,7 @@
   font-family: 'Inter', sans-serif;
   padding-top: 12vh;
   animation: fadeUp 1s ease forwards;
+  padding-bottom: 0;
 }
 
 .intro {
@@ -145,12 +146,11 @@
     position: absolute;
     top: 30px;
     left: 0;
+
     transform: translate(-50%, -50%);
-
     width: 100%;
-    height: 50%;
+    height: 100%;
     object-fit: cover;
-
     opacity: 0.15;
     z-index: 0;
   }
@@ -204,9 +204,11 @@
 
   .home-text {
     justify-content: flex-start;
-    padding-top: 40px;
+    min-height: auto;  
+    padding-bottom: 40px;
     text-align: center;
     align-items: center;
+    
   }
 
   .home-text::before {
@@ -229,8 +231,8 @@
     font-size: 1rem;
   }
   .photo{
-    top: -50px;
-    height: 50%;
+    top: 50px;
+    height: 100%;
   }
 }
 @keyframes fadeUpMobile {
@@ -274,9 +276,14 @@
 
 @media (max-width: 768px) {
 
+  .journey-text {
+    margin-top: 30px;
+  }
+
   .timeline-row {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;   /* 🔥 FIX */
+    margin-top: 20px;
   }
 
   .timeline-left,
@@ -284,14 +291,13 @@
     width: 100%;
   }
 
-  .timeline-right {
-    margin-top: 20px;
+  .timeline-left > div,
+  .timeline-right > div {
+    width: 100%;
   }
 
-  .timeline-center {
-    display: none;
-  }
-  .timeline-line{
+  .timeline-center,
+  .timeline-line {
     display: none;
   }
 
