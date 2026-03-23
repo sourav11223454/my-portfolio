@@ -5,24 +5,29 @@ function Journey() {
   return (
     <>
       <div className="container m-5 ">
+        <h1 className='container about-title '>About me</h1>
         <div className="grid-layout">
 
-           <div className="card big">
-           <span style={{fontSize:"20px"}}> Passionate about building modern, responsive web applications using MongoDB, Express.js, React, and Node.js. Currently focused on strengthening frontend development while exploring backend fundamentals.</span>
+          <div className="card big delay-1 area-big1">
+            <span style={{ fontSize: "20px" }}> Passionate about building modern, responsive web applications using MongoDB, Express.js, React, and Node.js. Currently focused on strengthening frontend development while exploring backend fundamentals.</span>
           </div>
-          <div className="card small based-card">
-            <h3>🌍</h3>
-            <h4>Based in</h4>
-            <p style={{ margin: "0px" }}>India</p>
-            <p>Calicut</p>
+
+          <div className="card small based-card p-4 delay-2 area-small1">
+            <div className="icon">🌍</div>
+            <h5 className="title mt-3">Based in</h5>
+            <p className="location mb-0">India</p>
+            <p className="sub-location">Calicut</p>
           </div>
-        </div>
-        <div className='grid-layout2'>
-          <div className="card small">
-            <p style={{border:"1px solid red",width:"50%",borderRadius:"20px",backgroundColor:"green",textAlign:"center"}}>• open for projects</p>
-            <a href=""><i style={{ padding: "0px 20px", color: "white" }} class="fa-brands fa-github"></i><i style={{ padding: "0px 20px", color: "white" }} className="fa-brands fa-instagram"></i><i style={{ padding: "0px 20px", color: "white" }} className="fa-brands fa-linkedin"></i></a>
+        
+          <div className="card small based-card p-4 delay-3 area-small2"><p className=" status-badge">• Open for projects</p>
+            <div className="icons mt-3">
+              <i className="icon github fa-brands fa-github"></i>
+              <i className="icon insta fa-brands fa-instagram"></i>
+              <i className="icon linkedin fa-brands fa-linkedin"></i>
+            </div>
           </div>
-          <div className="card big">
+
+          <div className="card big delay-4 area-big2">
             <h5>Main Technologies</h5>
             <div className="scroll-container">
               <div className="scroll-track">
@@ -35,6 +40,7 @@ function Journey() {
               </div>
             </div>
           </div>
+        
         </div>
       </div>
     </>
