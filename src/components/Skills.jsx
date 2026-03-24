@@ -11,7 +11,7 @@ import { FaGithub } from "react-icons/fa";
 import { SiMongodb } from "react-icons/si";
 function Skills() {
   return (
-    <div className="container" style={{ marginTop: "10rem" }}>
+    <section id='skills' className="container" style={{ marginTop: "10rem" }}>
       <h1 className='container about-title text-center'>Skills</h1>
 
       <div className="row g-4">
@@ -86,7 +86,7 @@ function Skills() {
           </div>
          </div>
       </div>
-    </div>
+    </section>
   )
 }
 

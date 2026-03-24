@@ -4,7 +4,7 @@ function Home() {
   return (
     <>
      <div>
-        <section className='home-text'>
+        <section id='home' className='home-text'>
           <h4 className='intro'>Hey, My name is Sourav and I am a</h4>
           <div>
             <h1 className='mern'>MERN STACK</h1>
