@@ -4,8 +4,8 @@ import React from 'react'
 function Journey() {
   return (
     <>
-      <div className="container mt-5 ">
-        <h1 className='container about-title '>About me</h1>
+      <div className="container my-5 ">
+        <h1 className='container about-title text-center mb-3'>About me</h1>
         <div className="about-container">
 
           <div className='row g-3'>

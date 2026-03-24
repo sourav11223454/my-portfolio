@@ -483,3 +483,19 @@
   position: relative;
 }
 
+.skill-card{
+  width: 300px;
+  height: 130px;
+  cursor: pointer;
+}
+.skill-card {
+  transition: 0.3s ease;
+  color: black; 
+}
+.skill-card:hover {
+  background: grey;
+  box-shadow: inset -300px 0 0 0 black;
+  color: grey;
+  border-radius: 20px;
+}
+
