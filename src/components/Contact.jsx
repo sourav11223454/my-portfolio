@@ -2,7 +2,11 @@ import React from 'react'
 
 function Contact() {
   return (
-    <div>Contact</div>
+   <>
+   <section>
+     <h1 className='container about-title text-center'>Skills</h1>
+   </section>
+   </>
   )
 }
 
