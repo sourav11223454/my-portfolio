@@ -25,10 +25,10 @@ function Navbar() {
         <div className={`${open ? "d-block" : "d-none"} d-lg-flex navbar-collapse`}>
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item"><a className="nav-link" href="#home">Home</a></li>
-            <li className="nav-item"><a className="nav-link" href="#journey">Journey</a></li>
+            <li className="nav-item"><a className="nav-link" href="#journey">About</a></li>
             <li className="nav-item"><a className="nav-link" href="#projects">Projects</a></li>
             <li className="nav-item"><a className="nav-link" href="#skills">Skills</a></li>
-            <li className="nav-item"><a className="nav-link" href="#">Contact</a></li>
+            <li className="nav-item"><a className="nav-link" href="#Contact">Contact</a></li>
           </ul>
         </div>
 

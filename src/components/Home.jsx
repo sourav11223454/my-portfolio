@@ -13,7 +13,7 @@ function Home() {
           <img className='photo' src="photo.png" alt="" />
           <div className="buttons">
             <button className="btn dark">Download CV</button>
-            <button className="btn light">View my Projects</button>
+            <a href='#projects'><button className="btn light">View my Projects</button></a>
           </div>
         </section>
       </div>
