@@ -1,13 +1,34 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: Roboto;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 section {
   scroll-margin-top: 90px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.row {
+  margin-left: 0 ;
+  margin-right: 0 ;
+}
+
+.container {
+  padding-left: 10px ;
+  padding-right: 10px ;
+}
+
+.card {
+  width: 100%;
 }
 
 .home-text {
@@ -121,6 +142,22 @@ section {
   color: #111;
 }
 
+.fade-up{
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 0.8s ease forwards;
+}
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+.delay-4 { animation-delay: 0.4s; }
+.delay-5 { animation-delay: 0.5s; }
+
+@media (max-width: 768px) {
+  .fade-up {
+    animation-duration: 0.5s;
+  }
+}
 
 @keyframes fadeUp {
   from {
@@ -149,6 +186,7 @@ section {
 
   body {
     overflow-x: hidden;
+    padding: 15px;
   }
 
   .photo {
@@ -308,25 +346,51 @@ section {
 
   .mobile-layout {
     display: block;
+    padding: 10px;
   }
 
   .mobile-small-row {
     display: flex;
     gap: 10px;
-    margin: 10px;
+    margin: 0;
   }
-
-  .mobile-small-row p {
-    width: 100%;
-    padding-top: 10px;
-  }
-
 
   .mobile-small-row .small {
     flex: 1;
+    min-width: 0;
+  }
+
+  .status-badge {
+  display: block;
+  width: 100%;  
+
+  text-align: center;
+  padding: 6px 10px;
+  border-radius: 10px;
+
+  background: rgba(0, 255, 150, 0.1);
+  color: #00ff95;
+
+  font-size: 14px;
+
+  white-space: normal; 
+  word-break: break-word;
+  }
+
+  .mobile-small-row .card {
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    margin: 5px;
+  }
+
+  .area-big1 span {
+    font-size: clamp(14px, 2.5vw, 16px);
+    line-height: 1.6;
   }
 
 }
+
 
 .card {
   padding: 40px;
@@ -473,6 +537,7 @@ section {
   gap: 15px;
 }
 
+
 .icon {
   width: 40px;
   height: 40px;
@@ -506,22 +571,65 @@ section {
   position: relative;
 }
 
-.skill-card {
-  width: 300px;
-  height: 130px;
-  cursor: pointer;
-}
 
 .skill-card {
-  transition: 0.3s ease;
+  width: 100%;
+  min-height: 120px;
+  height: auto;
+  cursor: pointer;
+
+  background: transparent;
+  box-shadow: none;
+  border-radius: 20px;
+  border: none;
   color: black;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease;
 }
+
+/* .skill-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: black;
+  border-radius: 20px;
+  transform: scale(0);
+  transition: 0.3s ease;
+  z-index: -1;
+} */
+
+/* .skill-card {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  height: auto;
+  min-height: 120px;
+  cursor: pointer;
+} */
+
+/* .skill-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: white;
+  transform: translateX(-100%);
+  transition: 0.3s ease;
+  z-index: -1;
+} */
+
 
 .skill-card:hover {
-  background: grey;
-  box-shadow: inset -300px 0 0 0 black;
-  color: grey;
-  border-radius: 20px;
+  color: white;
+  background: black;
+  box-shadow: inset -10.5em 0 0 0 black;
+  border: none;
 }
 
 .project-card {
@@ -531,15 +639,16 @@ section {
 
 .project-card:hover {
   transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
+
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -552,6 +661,7 @@ section {
 .project-card:hover .overlay {
   opacity: 1;
 }
+
 .contact-item {
   /* background: linear-gradient(135deg, #0f172a, #020617); */
   border-radius: 10px;
@@ -562,6 +672,7 @@ section {
   font-size: 16px;
   font-weight: 500;
 }
+
 .contact-item {
   transition: 0.3s;
 }
@@ -569,6 +680,7 @@ section {
 .contact-item:hover {
   transform: translateY(-5px);
 }
+
 .form-control {
   border-radius: 12px;
   border: 1px solid #e5e7eb;
@@ -578,7 +690,7 @@ section {
 
 .form-control:focus {
   border-color: #000;
-  box-shadow: 0 0 0 2px rgba(0,0,0,0.1);
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
 }
 
 .social-icons {
@@ -589,9 +701,9 @@ section {
 .social-icons a {
   width: 40px;
   height: 40px;
-  display: flex;              /* IMPORTANT */
-  align-items: center;        /* vertical center */
-  justify-content: center;    /* horizontal center */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
   color: black;
   text-decoration: none;
