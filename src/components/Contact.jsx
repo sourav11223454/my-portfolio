@@ -35,7 +35,7 @@ function Contact() {
             {/* LEFT SIDE */}
             <div className="col-md-5 border" style={{ borderRadius: '15px', padding: '15px' }}>
 
-              <motion.div {...fadeUp(0.4)} className="contact-item d-flex align-items-center p-3 mb-3 border" style={{ borderRadius: '20px' }}>
+              <motion.div {...fadeUp(0.4)} className="contact-item d-flex flex-column flex-md-row p-3 mb-3 border" style={{ borderRadius: '20px' }}>
                 <div className="icon me-3" style={{ color: 'white' }}>
                   <MdEmail />
                 </div>
@@ -81,7 +81,7 @@ function Contact() {
 
               <motion.button
                 {...fadeUp(0.7)}
-                className="btn btn-dark px-5"
+                className="btn btn-dark px-5 w-lg-100 w-md-auto"
               >
                 Send
               </motion.button>

@@ -117,21 +117,21 @@ function Journey() {
         <div className='mobile-layout'>
 
           <motion.div {...fadeUp(0.55)} className="card big area-big1">
-            <span style={{ fontSize: "20px" }}>
+            <span>
               Passionate about building modern, responsive web applications using MongoDB, Express.js, React, and Node.js. Currently focused on strengthening frontend development while exploring backend fundamentals.
             </span>
           </motion.div>
 
           <div className='mobile-small-row'>
 
-            <motion.div {...fadeUp(0.65)} className="card small based-card p-4 area-small1">
+            <motion.div {...fadeUp(0.65)} className="card small based-card area-small1">
               <div className="icon">🌍</div>
               <h5 className="title mt-3">Based in</h5>
               <p className="location mb-0">India</p>
               <p className="sub-location">Calicut</p>
             </motion.div>
 
-            <motion.div {...fadeUp(0.75)} className="card small based-card p-4 area-small2">
+            <motion.div {...fadeUp(0.75)} className="card small based-card area-small2">
               <p className="status-badge">• Open for projects</p>
               <div className="icons mt-3">
                 <i className="icon github fa-brands fa-github"></i>
