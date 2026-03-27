@@ -6,7 +6,7 @@ const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 50 },
   whileInView: { opacity: 1, y: 0 },
   transition: {
-    duration: isMobile< 768 ? 0.6 : 0.9,
+    duration: isMobile ?  0.6 : 0.9,
     delay,
     ease: [0.22, 1, 0.36, 1]
   },
@@ -60,15 +60,32 @@ function Journey() {
                 <p className="status-badge">• Open for projects</p>
 
                 <div className="icons mt-3">
-                  <a style={{ textDecoration: "none", color: 'white' }} href=''>
+
+                  <a
+                    href="https://github.com/sourav11223454"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none", color: 'white' }}
+                  >
                     <i className="icon github fa-brands fa-github"></i>
                   </a>
-                  <a style={{ textDecoration: "none", color: 'white' }} href=''>
-                    <i className="icon insta fa-brands fa-instagram"></i>
+
+                  <a
+                    href="mailto:souravvs2255@gmail.com"
+                    style={{ textDecoration: "none", color: 'white' }}
+                  >
+                    <i className="icon fa-solid fa-envelope"></i>
                   </a>
-                  <a style={{ textDecoration: "none", color: 'white' }} href=''>
+
+                  <a
+                    href="https://www.linkedin.com/in/sourav--vs"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none", color: 'white' }}
+                  >
                     <i className="icon linkedin fa-brands fa-linkedin"></i>
                   </a>
+
                 </div>
               </motion.div>
             </div>
@@ -118,7 +135,7 @@ function Journey() {
               <p className="status-badge">• Open for projects</p>
               <div className="icons mt-3">
                 <i className="icon github fa-brands fa-github"></i>
-                <i className="icon insta fa-brands fa-instagram"></i>
+                <i className="icon fa-solid fa-envelope"></i>
                 <i className="icon linkedin fa-brands fa-linkedin"></i>
               </div>
             </motion.div>
