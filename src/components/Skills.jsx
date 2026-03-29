@@ -9,61 +9,51 @@ export const skillsData = [
   {
     title: "HTML",
     description: "Markup language for web structure",
-    link: "#",
     icon: <FaHtml5 />,
   },
   {
     title: "CSS",
     description: "Styling and layout design",
-    link: "#",
     icon: <FaCss3 />,
   },
   {
     title: "Bootstrap",
     description: "Responsive UI framework",
-    link: "#",
     icon: <FaBootstrap />,
   },
   {
     title: "Tailwind CSS",
     description: "Utility-first CSS framework",
-    link: "#",
     icon: <RiTailwindCssFill />,
   },
   {
     title: "JavaScript",
     description: "Core web programming language",
-    link: "#",
     icon: <BsJavascript />,
   },
   {
     title: "React",
     description: "Frontend library for UI",
-    link: "#",
     icon: <FaReact />,
   },
   {
     title: "Express.js",
     description: "Backend framework for Node",
-    link: "#",
     icon: <SiExpress />,
   },
   {
     title: "Node.js",
     description: "JavaScript runtime",
-    link: "#",
     icon: <FaNodeJs />,
   },
   {
     title: "MongoDB",
     description: "NoSQL database",
-    link: "#",
     icon: <SiMongodb />,
   },
   {
     title: "Git & Github",
     description: "Version control system",
-    link: "#",
     icon: <FaGithub />,
   },
 ];
