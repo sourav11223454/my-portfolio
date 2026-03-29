@@ -261,6 +261,8 @@ body {
 @media (max-width: 768px) {
   .buttons {
     position: relative;
+    text-align: center;
+    left: 10%;
 
   }
 

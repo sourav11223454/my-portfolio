@@ -12,7 +12,7 @@ function Home() {
           </div>
           <img className='photo' src="photo.png" alt="" />
           <div className="buttons">
-            <a href='#projects'><button className="btn dark">View my Projects</button></a>
+            <a href='#projects'><button className="btn dark" style={{marginTop:'78px',marginRight:'80px'}}>View my Projects</button></a>
           </div>
         </section>
       </div>
