@@ -18,11 +18,11 @@ function Journey() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
-                className="h-full flex flex-col justify-center rounded-3xl py-12 
+                className="h-full flex flex-col justify-center rounded-3xl px-5 py-8 md:px-10 md:py-12 
                 bg-black text-white shadow-2xl border border-gray-800"
-                style={{paddingLeft:'25px',paddingRight:'25px'}}
+                style={{paddingLeft:'25px',paddingRight:'25px',}}
               >
-                <h2 className="text-4xl font-bold mb-6">Hey, I'm Sourav</h2>
+                <h2 className="text-4xl font-bold mb-6 mt-4">Hey, I'm Sourav</h2>
                 <p className="text-gray-300 text-lg leading-loose">
                   I build <span className="text-gray-400 font-semibold">modern web applications</span> that people actually enjoy using.
                   I specialize in <span className="text-blue-400 font-semibold">MERN stack development</span> and love turning ideas into real products.
