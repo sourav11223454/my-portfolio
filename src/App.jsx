@@ -8,11 +8,16 @@ import Contact from './components/Contact'
 import Home from './components/Home'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import Loader from './components/Loader'
+import { AnimatePresence } from "framer-motion";
+
 
 function App() {
 
-   useEffect(() => {
+  const [loading,setLoading]=useState(true)
+
+     useEffect(() => {
     AOS.init({
       duration: 1000,
       once: true 
@@ -20,14 +25,26 @@ function App() {
   }, []);
 
   return (
-    <>
-    <Navbar />
-    <Home />
-    <Journey />
-    <Skills />
-    <Projects />
-    <Contact />
-    <Footer />
+   <>
+      {/* Loader */}
+      <AnimatePresence mode="wait">
+        {loading && (
+          <Loader key="loader" onFinish={() => setLoading(false)} />
+        )}
+      </AnimatePresence>
+
+      {/* Main App */}
+      {!loading && (
+        <>
+          <Navbar />
+          <Home />
+          <Journey />
+          <Skills />
+          <Projects />
+          <Contact />
+          <Footer />
+        </>
+      )}
     </>
   )
 }
