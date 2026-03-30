@@ -59,32 +59,43 @@ function Contact() {
 
             {/* RIGHT SIDE FORM */}
             <div className="col-md-7 g-3">
+              <form action="https://formspree.io/f/mdapgeke" method="POST">
 
-              <motion.input
-                {...fadeUp(0.4)}
-                className="form-control mb-3"
-                placeholder="Name"
-              />
+                <motion.input
+                  {...fadeUp(0.4)}
+                  className="form-control mb-3"
+                  placeholder="Name"
+                  type='text'
+                  name='name'
+                  required
+                />
 
-              <motion.input
-                {...fadeUp(0.5)}
-                className="form-control mb-3"
-                placeholder="Email"
-              />
+                <motion.input
+                  {...fadeUp(0.5)}
+                  className="form-control mb-3"
+                  placeholder="Email"
+                  type='email'
+                  name='email'
+                  required
+                />
 
-              <motion.textarea
-                {...fadeUp(0.6)}
-                className="form-control mb-3"
-                rows="3"
-                placeholder="Message"
-              />
+                <motion.textarea
+                  {...fadeUp(0.6)}
+                  className="form-control mb-3"
+                  rows="3"
+                  placeholder="Message"
+                  name='message'
+                  required
+                />
 
-              <motion.button
-                {...fadeUp(0.7)}
-                className="btn btn-dark px-5 w-lg-100 w-md-auto"
-              >
-                Send
-              </motion.button>
+                <motion.button
+                  {...fadeUp(0.7)}
+                  type='submit'
+                  className="btn btn-dark px-5 w-lg-100 w-md-auto"
+                >
+                  Send
+                </motion.button>
+              </form>
 
             </div>
 

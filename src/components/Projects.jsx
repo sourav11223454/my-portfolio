@@ -40,7 +40,7 @@ function Projects() {
               </button> */}
               <div className="overlay">
                 <a href='https://bm-calculator-nine.vercel.app' target="_blank"><button className="btn btn-light">Live Demo</button></a>
-                <a href='https://github.com/sourav11223454/BM-Calculator' target="_blank"> <button className="btn btn-dark">GitHub</button></a>
+                <a href='https://github.com/sourav-vs/BM-Calculator' target="_blank"> <button className="btn btn-dark">GitHub</button></a>
               </div>
             </div>
           </div>
@@ -79,7 +79,7 @@ function Projects() {
               </button> */}
               <div className="overlay">
                 <a href='https://weatherchecking.vercel.app' target="_blank"><button className="btn btn-light">Live Demo</button></a>
-                <a href='https://github.com/sourav11223454/Weather' target="_blank"> <button className="btn btn-dark">GitHub</button></a>
+                <a href='https://github.com/sourav-vs/Weather' target="_blank"> <button className="btn btn-dark">GitHub</button></a>
               </div>
 
             </div>
