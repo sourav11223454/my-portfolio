@@ -61,7 +61,7 @@ export const skillsData = [
 function Skills() {
   return (
     <>
-      <div className="max-w-5xl mx-auto px-8" style={{marginTop:"10rem"}}>
+      <div id='skills' className="max-w-5xl mx-auto px-8" style={{marginTop:"10rem"}}>
         <h1 className='container about-title text-center'>Skills</h1>
         <HoverEffect items={skillsData} />
       </div>
