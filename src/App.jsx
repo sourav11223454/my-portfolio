@@ -36,13 +36,15 @@ function App() {
       {/* Main App */}
       {!loading && (
         <>
-          <Navbar />
-          <Home />
-          <Journey />
-          <Skills />
-          <Projects />
-          <Contact />
-          <Footer />
+          <div style={{ overflowX: "hidden" }}>
+            <Navbar />
+            <Home />
+            <Journey />
+            <Skills />
+            <Projects />
+            <Contact />
+            <Footer />
+          </div>
         </>
       )}
     </>
